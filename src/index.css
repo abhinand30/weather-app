@@ -1,0 +1,138 @@
+.homeContainer{
+  /* background-color: #000; */
+  height: 100vh;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding-left: 20px;
+  padding-top: 5px;
+  /* background-color: linear-gradien(#44D1BD,#3CB0E1); */
+  background: linear-gradient(#44D1BD,#3CB0E1);
+  /* display: grid;
+  grid-template-columns:1fr 2fr 2fr ; */
+  /* display:flex */
+}
+.searchContainer{
+  width: 100%; 
+  max-width: 1200px; 
+  align-items: center; 
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.searchBar {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: #202B3B;
+  /* width: 100%; 
+  max-width: 1200px;  */
+  height: 50px;
+  padding: 0 15px; 
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+  flex: 1;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.searchInput::placeholder {
+  color: #aaa; 
+}
+.listItem{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;  
+}
+.listContainer{
+  width: 100%; 
+  max-width: 1200px; 
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#202B3B;
+  /* padding: 10px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon{
+  width:30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.titleComponent{
+  color:#fff;
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; 
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  gap:50px;
+  margin-top: 30px;
+}
+.weatherContainer{
+  width: 100%; 
+  max-width: 1200px; 
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  width:800px;
+  gap:20px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.commonText{
+  color: #fff;
+}
+.mainContainer{
+  background-color: #202B3B;
+  width:300px;
+  height:700px;
+  border-radius:20px;
+}
+.card{
+  width: 288px;
+height: 146px;
+padding:10px;
+padding-top: 30px;
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 4px;
+opacity: 0.85;
+}
+
+.title{
+  font-size: 18px;
+  color: #072A41;
+}
+
+.line{
+  border-width: 1;
+  height: 5;
+  border-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
