@@ -1,17 +1,11 @@
+import React from 'react';
+
 import snowfImage from '../assets/snow.png';
 import cloudImage from '../assets/cloud.png';
 import sunImage from '../assets/sun.png';
-import React from 'react';
+import { titleProps } from '../common/types';
 
-interface titleProps{
-  name:string;
-  weather:
-    {description:string;
-      main:string;
-  }
-  temp:number;
-  country:string;
-}
+
 const TitleComponent:React.FC<titleProps> = (props) => {
   const {name,weather,temp,country}=props;
   

@@ -1,18 +1,15 @@
-import axios from 'axios';
-import icon from '../assets/searchIcon.png'
 import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+import icon from '../assets/searchIcon.png'
+import { LocationInterface, searchProps } from '../common/types';
 const apiKey = import.meta.env.VITE_API_KEY
 
-
-interface searchProps {
-  setLocations: (value: string) => void
-}
-
 const SearchBar: React.FC<searchProps> = (props) => {
-  const { setLocations } = props;
+  const { setLocation } = props;
 
   const [value, setValue] = useState('');
-  const [locationArray, setLocationArray] = useState([]);
+  const [locationArray, setLocationArray] = useState<[LocationInterface]|[]>([]);
 
   useEffect(() => {
     const handleSearch = async () => {
@@ -33,7 +30,7 @@ const SearchBar: React.FC<searchProps> = (props) => {
 
 
   const onSelectCity = (city: string) => {
-    setLocations(city);
+    setLocation(city);
     setLocationArray([]);
   }
   return (

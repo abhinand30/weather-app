@@ -1,15 +1,19 @@
+import React from 'react';
+import moment from 'moment';
+
 import sunriseIcon from '../assets/sunrise.png';
 import sunsetIcon from '../assets/sunset.png';
-// import dropIcon from '../assets/drop.png';
 import humidityIcon from '../assets/humidity.png';
 import windIcon from '../assets/windIcon.png';
 import tempIcon from '../assets/temp.png';
 import visibilityIcon from '../assets/visibility.png';
 import pressureIcon from '../assets/pressure.png';
 import sealevelIcon from '../assets/sealevel.png'
-import moment from 'moment';
+import {  weatherProps } from '../common/types';
 
-function WeatherDetails(props) {
+
+
+const WeatherDetails:React.FC<weatherProps>=(props)=> {
     const {weatherData}=props;
 
     const convertTimestampToTime = (timestamp:number) => {
